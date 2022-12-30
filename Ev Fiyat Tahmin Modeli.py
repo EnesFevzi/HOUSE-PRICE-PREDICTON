@@ -48,8 +48,8 @@ pd.set_option('display.float_format', lambda x: '%.3f' % x)
 ################################################################
 
 # train ve test setlerinin bir araya getirilmesi.
-train = pd.read_csv("C:/Users/Enes Fevzi/Desktop/Machine Learning/Case Study I/HOUSE_PRICE_PREDICTON-221211-022207/evFiyatTahminModeli/datasets/data/train.csv")
-test = pd.read_csv("C:/Users/Enes Fevzi/Desktop/Machine Learning/Case Study I/HOUSE_PRICE_PREDICTON-221211-022207/evFiyatTahminModeli/datasets/data/test.csv")
+train = pd.read_csv("data/train.csv")
+test = pd.read_csv("data/test.csv")
 df = train.append(test,ignore_index=False).reset_index()
 
 df = df.drop("index", axis=1)
